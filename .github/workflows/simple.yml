@@ -9,7 +9,7 @@ jobs:                               # This workflow contains a single job called
     steps:
 
     - name: echo a string
-      run: eccho "Hello World"
+      run: echo "Hello World"
 
     - name: Run a multi-line script
       run: |
