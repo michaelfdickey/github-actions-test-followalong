@@ -19,4 +19,11 @@ jobs:                               # This workflow contains a single job called
         ls -ahl
         node -v
         npm -v
-        
+    
+    - name: Python command
+      run: |
+        import platform
+        print(platform.processor())
+      shell: python
+      
+      
