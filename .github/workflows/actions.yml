@@ -4,7 +4,6 @@ on: [issue]
 
 jobs:
   run-github-actions:
-    
     runs-on: ubuntu-latest
     steps: 
       - name: Simple JS Action
