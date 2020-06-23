@@ -11,7 +11,17 @@ jobs:
           pwd
           ls 
           #the specific commit id of the commit that triggered this workflow to run      
+          echo GITHUB_SHA:
           echo $GITHUB_SHA 
+          
+          echo GITHUB_REPOSITORY:
+          echo $GITHUB_REPOSITORY
+          
+          echo GITHUB_WORKSPACE:
+          echo $GITHUB_WORKSPACE
+          
+          echo github.token:
+          echo $"{{ github.token }}"
       
       - name: Checkout
         uses: actions/checkout@v1
