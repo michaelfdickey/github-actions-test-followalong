@@ -6,4 +6,5 @@ key:
 defaults:
   key: value
   key2: 333
+  key3: 444
 
