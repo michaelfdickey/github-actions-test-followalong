@@ -1,0 +1,9 @@
+name: Ali
+age: 28
+address: "home town: home"
+active: true
+key:
+defaults:
+  key: value
+  key2: 333
+
