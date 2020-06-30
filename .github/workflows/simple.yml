@@ -1,7 +1,8 @@
 name: Shell Commands
 
-on: [issues]
-
+on:
+  schedule:
+    - cron: "6 * * * *"
 jobs:                               # This workflow contains a single job called "build"
   run-shell-command:                # The type of runner that the job will run on
     runs-on: ubuntu-latest
