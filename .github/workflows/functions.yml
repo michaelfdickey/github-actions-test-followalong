@@ -1,0 +1,18 @@
+# This is a basic workflow to help you get started with Actions
+
+name: GitHub Function examples
+
+# Controls when the action will run. 
+on: [issues]
+jobs:
+  functions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: function output dump
+        run: |
+          echo ${{ contains( 'hello', 'll') }}
+          echo ${{ startsWith( 'hello', 'he' ) }}
+          echo ${{ endsWith( 'hello', 'lo' ) }}
+          echo ${{ format('Hello {0} {1} {2}', 'World', '!', '!') }}
+    
+     
