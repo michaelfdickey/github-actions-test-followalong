@@ -14,8 +14,10 @@ jobs:
 		steps:
 		- name: log node version
 		  run: node -v
-	  	- uses: actions/setup-node@v1
-	  		with:
-	  	  		node-version: $ {{ matrix.node_version }}
-	  	- name: log node version
-	  	  run: node -v
+      
+    - uses: actions/setup-node@v1
+      with:
+        node-version: $ {{ matrix.node_version }}
+
+    - name: log node version
+	    run: node -v
