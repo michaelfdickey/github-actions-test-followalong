@@ -2,7 +2,7 @@
 
 name: Matrix
 
-on: push
+on: issues
    
 jobs:
   node-version:
