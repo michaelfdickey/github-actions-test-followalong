@@ -1,0 +1,23 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Matrix
+on: issues
+
+jobs:
+	node-version:
+		strategy:
+			matrix: 
+				os: [ubuntu-latest, windows-latest]
+				node_version: [6,8,10]
+		runs-on: ${{ matrix.os }}
+		
+		steps:
+		- name: log node version
+		  run: node -v
+      
+    - uses: actions/setup-node@v1
+      with:
+        node-version: $ {{ matrix.node_version }}
+
+    - name: log node version
+	    run: node -v
